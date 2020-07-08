@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+
+<h1 style="margin-left:3rem">Register</h1>
+<div class="register">
+  <div class="email">
+    <div style="margin:1.5rem 2.5rem">
+    <p>Sign up manually...</p>
+    <form action="/register" method="POST">
+      <label for="username">Email</label>
+      <br>
+      <input type="email" name="username" autocomplete="off">
+      <br>
+      <label for="password">Password</label>
+      <br>
+      <input type="password" name="password">
+      <br>
+      <button class="login-btn" type="submit">Register</button>
+    </form>
+    </div>
+  </div>
+  <div class="transition">
+    <span>or</span>
+  </div>
+  <div class="social-media">
+    <div style="margin:1.5rem 2.5rem">
+    <p>... using Social Media</p>
+    <a style="text-decoration:none" href="/auth/google"><button class="google-btn" type="button" name="button"><div class="social-border"><i class="fab fa-google"></i>
+    </div>
+    <span>Sign Up with Google</span></button></a>
+    <br />
+    <a style="text-decoration:none" href="/auth/facebook"><button class="facebook-btn" type="button" name="button"><div class="social-border"><i class="fab fa-facebook"></i>
+    </div>
+    <span>Sign Up with Facebook</span></button></a>
+    </div>
+  </div>
+</div>
+
+
+<%- include('partials/footer') %>
