@@ -28,7 +28,7 @@ app.use(passport.session());
 
 
 // Connect to the database
-mongoose.connect('mongodb://localhost:27017/userDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb+srv://admin-andre:${process.env.DB_PASSWORD}@cluster0.lqnqa.mongodb.net/userDB`, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set('useCreateIndex', true);
 
 // Mongoose Schema
