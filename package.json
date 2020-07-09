@@ -12,6 +12,9 @@
   },
   "author": "André Nascimento",
   "license": "ISC",
+  "engines": {
+    "node": "12.16.0"
+  },
   "bugs": {
     "url": "https://github.com/nascimentoandre/secrets/issues"
   },

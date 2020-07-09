@@ -179,5 +179,6 @@ app.route('/submit')
   });
 
 
-///// SET UP THE SERVER ON PORT 3000 ////////
-app.listen(3000, _ => console.log('Server is running on port 3000.'));
+///// SET UP THE SERVER ON PORT 3000 or a dynamic port from heroku ////////
+
+app.listen(process.env.PORT || 3000, _ => console.log('Server is running on port 3000.'));
